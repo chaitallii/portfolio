@@ -5,6 +5,7 @@
 
 body {
   background-color: #bcaaff;
+  transition: all 1.7s;
 }
 
 h1,
@@ -44,8 +45,28 @@ li {
   transition: all 0.4s;
 }
 
-li:hover{
+li:hover {
   font-size: large;
   text-decoration: underline;
   text-decoration-color: #bcaaff;
+}
+.name {
+  transition: all 1.7s;
+}
+
+@media (max-width: 450px) {
+  body {
+    background-color: khaki;
+  }
+}
+
+@media (max-width: 500px) {
+  .elements {
+    display: none;
+  }
+  .name {
+    text-align: center;
+    width: 100%;
+    font-size: 1.35rem;
+  }
 }
